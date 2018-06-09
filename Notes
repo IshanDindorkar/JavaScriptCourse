@@ -1,0 +1,19 @@
+* JavaScript is a lightweight, cross-platform, object-oriented programming language.
+
+* JavaScript can be used at client and server side (thanks to nodejs)
+
+* Multiple frameworks are available to support web developer using JavaScript
+
+* Main building blocks of any web application -
+** HTML - Content
+** CSS - Presentation
+** JavaScript - Dynamic Effects / programming
+
+* 5 types of variable types -
+** Number - floating point numbers
+** String - sequence of characters
+** Boolean - true or false
+** Undefined - data type of a variable which does not have any value. It is data type in the begininning
+** Null - 'non-existent'
+
+* JavaScript has a dynamic typing - you don't have to give type of variable while defining
