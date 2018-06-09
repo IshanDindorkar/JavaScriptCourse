@@ -16,4 +16,14 @@
 ** Undefined - data type of a variable which does not have any value. It is data type in the begininning
 ** Null - 'non-existent'
 
-* JavaScript has a dynamic typing - you don't have to give type of variable while defining
+* JavaScript has a feature called as dynamic typing - you don't have to give type of variable while defining
+
+* Type Coercion - JavaScript dynamically convert type of variables, for example, converting number to string when concatenated with a string
+
+* Variable mutation - JavaScript provides flexibility to change type of value stored in a variable. For example, variable age might be storing numeric value but later it can be made to store string value
+
+* Operator precedence - check mozilla developer network(MDN) page to find out precedence among operators
+
+* "===" -> operator that compares value of one variable with another variable
+
+* How "==" is different from "===" -> "==" forces type coercion but "===" does not force type coercion and compares values only
