@@ -1,3 +1,13 @@
+* Git Help ->
+** To checkout code changes for a specific commit, do following steps -
+*** execute command git log on Git Bash / Terminal / command
+*** take commit id for which changes have to be checked out
+*** execute command - git checkout <commit id>
+**** this will checkout all changes for that commit and message will be shown that you are in detached HEAD mode
+*** to revert back to last committed changes -
+**** execute command - git branch to see what all branches are available to switch
+**** if you find branch something like master / develop, execute command - git checkout master/develop. This will bring back all your changes committed.
+
 * JavaScript is a lightweight, cross-platform, object-oriented programming language.
 
 * JavaScript can be used at client and server side (thanks to nodejs)
@@ -46,3 +56,22 @@ var someFun = function(par) {
 }
 
 this will not return any value. It will execute a set of statements.
+
+* Arrays can hold values of different data types. For example,
+
+var profileIshan = ['Ishan', 'Dindorkar', 30, 'S/W Architect']
+this array is holding values of type string and number
+
+* Two ways of declaring arrays -
+** Using [] 
+*** var profile = ['', '', <num>, <boolean>]
+
+** Using keyword Array
+*** var profile = new Array('', '', <num>, <boolean>)
+
+* Some commonly used functions with Arrays -
+** push - add last element to the end
+** pop - remove last element from the end
+** unshift - add element to the begining of the array
+** shift - remove first element of the array
+** indexof - gives index of given element within array

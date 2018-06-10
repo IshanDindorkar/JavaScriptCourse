@@ -93,7 +93,6 @@ var yearOfBirthIshan = prompt('Which year you was born, Ishan?')
 var ageIshan = calculateAge(yearOfBirthIshan)
 alert('Age of Ishan is ' + ageIshan)
 yearsUntilRetirement('Ishan', yearOfBirthIshan)
-*/
 
 // Understanding difference b/w function expression and function statement
 
@@ -110,4 +109,42 @@ var addGivenNos = function(num1, num2) {
     num1 + num2
 }
 alert('Sum of given numbers using function statement is ' + addGivenNos)
+*/
 
+// Arrays ...
+// Two ways of defining an array -
+// 1. Using [] ->
+// Profile comprises of first name, last name, age and profession in the order
+var profileIshan = ['Ishan', 'Dindorkar', 30, 'S/W Architect']
+
+// 2. Using keyword Array ->
+// var profileIshan = new Array('Ishan', 'Dindorkar', 30, 'S/W Architect')
+
+// to retrieve value of specific element from array
+console.log('Lets print last name', profileIshan[1])
+// above statement must print value as Dindorkar
+
+// some commonly used functions ...
+// adding another element to profile - 'is married?' at the end of array
+profileIshan.push('true')
+console.log('New profile for Ishan!', profileIshan)
+
+// adding prefix for person at the beginning of array
+profileIshan.unshift('Mr.')
+console.log('Some more details for Ishan!', profileIshan)
+
+// removing last element from the array
+var lastElement = profileIshan.pop()
+console.log('Ejecting last element from profile, Ishan', lastElement)
+
+// removing first element from the array
+var firstElement = profileIshan.shift()
+console.log('Removing first element from profile, Ishan!', firstElement)
+
+// finding out if Ishan is a S/W Architect
+var index = profileIshan.indexOf('S/W Architect')
+if (index === -1) {
+    console.log('Ishan is NOT a S/W Architect.')
+} else {
+    console.log('Ishan is a S/W Architect.')
+}
