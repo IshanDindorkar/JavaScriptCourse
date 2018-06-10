@@ -173,7 +173,6 @@ person['married'] = true
 
 // print values for new object created
 console.log('Person profile', person)
-*/
 
 // Load an object with function
 var ishan = new Object()
@@ -191,4 +190,39 @@ ishan.calculateAge = function() {
 
 ishan.calculateAge()
 console.log("Ishan's age is", ishan.age)
+*/
 
+// Iterative loops ...
+var names = ['Name 1', 'Name 2', 'Name 3', 'Name 4', 'Name 5']
+
+console.log('Printing names using for loop ...')
+// using for loop to print names ...
+for (var index = 0; index < names.length; index++) {
+    console.log(names[index])
+}
+
+console.log('Printing names using while loop ...')
+// using while loop to print names ...
+var index = 0
+while (index < names.length) {
+    console.log(names[index])
+    index++
+}
+
+// using break statement to stop loop ...
+for (var index = 0; index < names.length; index++) {
+    console.log('Printing name', names[index], '. Waiting for loop to break ...')
+    if (index === 2) {
+        console.log('Loop is breaking ...')
+        break
+    }
+}
+
+// using continue statement to skip ...
+for (var index = 0; index < names.length; index++) {
+    if (index === 2) {
+        console.log('Skipping printing name when index is 2')
+        continue
+    }
+    console.log('Printing name', names[index], '. Waiting for skipping an element ...')
+}
