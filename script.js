@@ -68,7 +68,7 @@ switch (occupation) {
         alert("Ishan is doing something")
     } 
 
-} */
+} 
 
 // use functions ...
 
@@ -93,6 +93,21 @@ var yearOfBirthIshan = prompt('Which year you was born, Ishan?')
 var ageIshan = calculateAge(yearOfBirthIshan)
 alert('Age of Ishan is ' + ageIshan)
 yearsUntilRetirement('Ishan', yearOfBirthIshan)
+*/
 
+// Understanding difference b/w function expression and function statement
 
+// Function expression ...
+function addNumbers(num1, num2) {
+    var sum = num1 + num2
+    return sum
+}
+var sum = addNumbers(2,3)
+alert('Sum of given numbers using function expression is ' + sum)
+
+// Function statement ...
+var addGivenNos = function(num1, num2) {
+    num1 + num2
+}
+alert('Sum of given numbers using function statement is ' + addGivenNos)
 
