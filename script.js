@@ -1,5 +1,5 @@
 // declaring variables to store string value
-var firstName = "Ishan";
+/* var firstName = "Ishan";
 var lastName = "Dindorkar"
 
 console.log("Hello ", firstName, lastName)
@@ -68,5 +68,31 @@ switch (occupation) {
         alert("Ishan is doing something")
     } 
 
+} */
+
+// use functions ...
+
+// calculating age of person
+function calculateAge(yearOfBirth) {
+    var age = 2018 - yearOfBirth
+    return age
 }
+
+// calling previous function to calculate years left for retirement
+function yearsUntilRetirement(name, yearOfBirth) {
+    var age = calculateAge(yearOfBirth)
+    var yearsUntilRetirement = 65 - age
+    if (yearsUntilRetirement < 0) {
+        alert(name + ' is retired now.')
+    } else {
+        alert(name + ' will retire in ' + yearsUntilRetirement + ' years.')
+    }
+}
+
+var yearOfBirthIshan = prompt('Which year you was born, Ishan?')
+var ageIshan = calculateAge(yearOfBirthIshan)
+alert('Age of Ishan is ' + ageIshan)
+yearsUntilRetirement('Ishan', yearOfBirthIshan)
+
+
 

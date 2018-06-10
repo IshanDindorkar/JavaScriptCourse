@@ -27,3 +27,22 @@
 * "===" -> operator that compares value of one variable with another variable
 
 * How "==" is different from "===" -> "==" forces type coercion but "===" does not force type coercion and compares values only
+
+* Keyword 'function' is used for defining a function in JS
+
+* Difference between function expression and function statement ->
+** Function expression -
+
+function someFun(par) {
+
+}
+
+this will produce some value as an outcome
+
+** Function statement -
+
+var someFun = function(par) {
+
+}
+
+this will not return any value. It will execute a set of statements.
