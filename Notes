@@ -1,47 +1,47 @@
-* Git Help ->
-** To checkout code changes for a specific commit, do following steps -
-*** execute command git log on Git Bash / Terminal / command
-*** take commit id for which changes have to be checked out
-*** execute command - git checkout <commit id>
-**** this will checkout all changes for that commit and message will be shown that you are in detached HEAD mode
-*** to revert back to last committed changes -
-**** execute command - git branch to see what all branches are available to switch
-**** if you find branch something like master / develop, execute command - git checkout master/develop. This will bring back all your changes committed.
+# Git Help ->
+## To checkout code changes for a specific commit, do following steps -
+### execute command git log on Git Bash / Terminal / command
+### take commit id for which changes have to be checked out
+### execute command - git checkout <commit id>
+#### this will checkout all changes for that commit and message will be shown that you are in detached HEAD mode
+### to revert back to last committed changes -
+#### execute command - git branch to see what all branches are available to switch
+#### if you find branch something like master / develop, execute command - git checkout master/develop. This will bring back all your changes committed.
 
-* JavaScript is a lightweight, cross-platform, object-oriented programming language.
+# JavaScript is a lightweight, cross-platform, object-oriented programming language.
 
-* JavaScript can be used at client and server side (thanks to nodejs)
+# JavaScript can be used at client and server side (thanks to nodejs)
 
-* Multiple frameworks are available to support web developer using JavaScript
+# Multiple frameworks are available to support web developer using JavaScript
 
-* Main building blocks of any web application -
-** HTML - Content
-** CSS - Presentation
-** JavaScript - Dynamic Effects / programming
+# Main building blocks of any web application -
+## HTML - Content
+## CSS - Presentation
+## JavaScript - Dynamic Effects / programming
 
-* 5 types of variable types -
-** Number - floating point numbers
-** String - sequence of characters
-** Boolean - true or false
-** Undefined - data type of a variable which does not have any value. It is data type in the begininning
-** Null - 'non-existent'
+# 5 types of variable types -
+## Number - floating point numbers
+## String - sequence of characters
+## Boolean - true or false
+## Undefined - data type of a variable which does not have any value. It is data type in the begininning
+## Null - 'non-existent'
 
-* JavaScript has a feature called as dynamic typing - you don't have to give type of variable while defining
+# JavaScript has a feature called as dynamic typing - you don't have to give type of variable while defining
 
-* Type Coercion - JavaScript dynamically convert type of variables, for example, converting number to string when concatenated with a string
+# Type Coercion - JavaScript dynamically convert type of variables, for example, converting number to string when concatenated with a string
 
-* Variable mutation - JavaScript provides flexibility to change type of value stored in a variable. For example, variable age might be storing numeric value but later it can be made to store string value
+# Variable mutation - JavaScript provides flexibility to change type of value stored in a variable. For example, variable age might be storing numeric value but later it can be made to store string value
 
-* Operator precedence - check mozilla developer network(MDN) page to find out precedence among operators
+# Operator precedence - check mozilla developer network(MDN) page to find out precedence among operators
 
-* "===" -> operator that compares value of one variable with another variable
+# "===" -> operator that compares value of one variable with another variable
 
-* How "==" is different from "===" -> "==" forces type coercion but "===" does not force type coercion and compares values only
+# How "==" is different from "===" -> "==" forces type coercion but "===" does not force type coercion and compares values only
 
-* Keyword 'function' is used for defining a function in JS
+# Keyword 'function' is used for defining a function in JS
 
-* Difference between function expression and function statement ->
-** Function expression -
+# Difference between function expression and function statement ->
+## Function expression -
 
 function someFun(par) {
 
@@ -49,7 +49,7 @@ function someFun(par) {
 
 this will produce some value as an outcome
 
-** Function statement -
+## Function statement -
 
 var someFun = function(par) {
 
@@ -57,39 +57,39 @@ var someFun = function(par) {
 
 this will not return any value. It will execute a set of statements.
 
-* Arrays can hold values of different data types. For example,
+# Arrays can hold values of different data types. For example,
 
 var profileIshan = ['Ishan', 'Dindorkar', 30, 'S/W Architect']
 this array is holding values of type string and number
 
-* Two ways of declaring arrays -
-** Using [] 
-*** var profile = ['', '', <num>, <boolean>]
+# Two ways of declaring arrays -
+## Using [] 
+### var profile = ['', '', <num>, <boolean>]
 
-** Using keyword Array
-*** var profile = new Array('', '', <num>, <boolean>)
+## Using keyword Array
+### var profile = new Array('', '', <num>, <boolean>)
 
-* Some commonly used functions with Arrays -
-** push - add last element to the end
-** pop - remove last element from the end
-** unshift - add element to the begining of the array
-** shift - remove first element of the array
-** indexof - gives index of given element within array
+# Some commonly used functions with Arrays -
+## push - add last element to the end
+## pop - remove last element from the end
+## unshift - add element to the begining of the array
+## shift - remove first element of the array
+## indexof - gives index of given element within array
 
-* Difference between Object & Array -
-** It is important to put elements in order within array. 
+# Difference between Object & Array -
+## It is important to put elements in order within array. 
 But in an object, there is no such pre-condition. It is basically consisting of
 key-value pairs which can be in any order.
 
-** Arrays are identified by square brackets - [] while object is identified by
+## Arrays are identified by square brackets - [] while object is identified by
 curly brackets - {}
 
-* Two ways of accessing properties of an object -
-** using '.' operator -> <object>.<property-name>
-** using '[]' -> <object>['<property-name']
+# Two ways of accessing properties of an object -
+## using '.' operator -> <object>.<property-name>
+## using '[]' -> <object>['<property-name']
 
-* Similarly, two ways of creating an object ...
-** Method 1 -
+# Similarly, two ways of creating an object ...
+## Method 1 -
 var person = {
     firstName: '',
     lastName: '',
@@ -97,7 +97,7 @@ var person = {
     ...
 }
 
-** Method 2 -
+## Method 2 -
 var person = new Object()
 person.firstName = ''
 person.lastName = ''
