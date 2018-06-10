@@ -75,3 +75,30 @@ this array is holding values of type string and number
 ** unshift - add element to the begining of the array
 ** shift - remove first element of the array
 ** indexof - gives index of given element within array
+
+* Difference between Object & Array -
+** It is important to put elements in order within array. 
+But in an object, there is no such pre-condition. It is basically consisting of
+key-value pairs which can be in any order.
+
+** Arrays are identified by square brackets - [] while object is identified by
+curly brackets - {}
+
+* Two ways of accessing properties of an object -
+** using '.' operator -> <object>.<property-name>
+** using '[]' -> <object>['<property-name']
+
+* Similarly, two ways of creating an object ...
+** Method 1 -
+var person = {
+    firstName: '',
+    lastName: '',
+    age: 23,
+    ...
+}
+
+** Method 2 -
+var person = new Object()
+person.firstName = ''
+person.lastName = ''
+...

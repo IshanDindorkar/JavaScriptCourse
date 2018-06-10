@@ -109,7 +109,6 @@ var addGivenNos = function(num1, num2) {
     num1 + num2
 }
 alert('Sum of given numbers using function statement is ' + addGivenNos)
-*/
 
 // Arrays ...
 // Two ways of defining an array -
@@ -148,3 +147,48 @@ if (index === -1) {
 } else {
     console.log('Ishan is a S/W Architect.')
 }
+
+// Objects ...
+// Two methods of defining objects ->
+// Method 1 -
+var ishan = {
+    firstName: 'Ishan',
+    lastName: 'Dindorkar',
+    age: 30,
+    designation: 'S/W Architect',
+    married: true
+}
+
+// access properties of newly created object
+console.log('Designation for Ishan', ishan['designation'])
+console.log('Age', ishan.age)
+
+// Method 2 -
+var person = new Object()
+person.firstName = 'Ishan'
+person.lastName = 'Dindorkar'
+person['age'] = 30
+person['designation'] = 'S/W Architect'
+person['married'] = true
+
+// print values for new object created
+console.log('Person profile', person)
+*/
+
+// Load an object with function
+var ishan = new Object()
+ishan.firstName = 'Ishan'
+ishan.lastName = 'Dindorkar'
+ishan.yearOfBirth = 1988
+ishan.designation = 'S/W Architect'
+
+// Adding function a.k.a method to ishan
+ishan.calculateAge = function() {
+    // return 2018 - this.yearOfBirth
+    // if we want to assign value of age to object instead of returning ...
+    this.age = 2018 - this.yearOfBirth
+}
+
+ishan.calculateAge()
+console.log("Ishan's age is", ishan.age)
+
