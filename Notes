@@ -102,3 +102,40 @@ var person = new Object()
 person.firstName = ''
 person.lastName = ''
 ...
+
+# Hoisting 
+
+## For every function defined, there is an associated 'Execution Context Object'
+
+## An Execution Context Object consist of 3 properties -
+### Variable Object (VO)
+### Scope Chain
+### "This" variable
+
+# An Execution Context Object is generated in 2 phases -
+## Creation phase -
+### Creation of Variable Object (VO)
+### Creation of scope Chain
+### Determine value of "this" variable
+
+## Execution phase -
+Code of function is executed line by line
+
+# Creation of Variable Object(VO) -
+## Argument object - contains all parameters passed to the function
+## Code is scanned to find out all function declarations. A property is created for every function defined, pointing to that function.
+## Code is scanned for local variables. A property is created in VO for every local variable and set to "undefined"
+
+## A function can be invoked BEFORE it is defined IF defined through function declaration method
+## A function cannot be invoked BEFORE it is defined IF defined through function expression method
+## All local variables are scanned and pushed to execution context object's VO with value as "undefined"
+## For example of above points, refer topic "Hoisting" in script.js
+
+
+
+
+
+
+
+
+

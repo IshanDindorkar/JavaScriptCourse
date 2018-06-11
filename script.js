@@ -190,7 +190,6 @@ ishan.calculateAge = function() {
 
 ishan.calculateAge()
 console.log("Ishan's age is", ishan.age)
-*/
 
 // Iterative loops ...
 var names = ['Name 1', 'Name 2', 'Name 3', 'Name 4', 'Name 5']
@@ -226,3 +225,27 @@ for (var index = 0; index < names.length; index++) {
     }
     console.log('Printing name', names[index], '. Waiting for skipping an element ...')
 }
+*/
+
+// Hoisting ...
+
+// Demonstrating hoisting with function declaration ... 
+calculateAge(1988)
+function calculateAge(year) { // this is function declaration ...
+    console.log('Age', 2018 - year)
+}
+
+// Demonstrating hoisting with function expression ...
+// retirement(1990)
+// The above statement doesn't work with function expression
+var retirement = function(year) { // this is function expression ...
+    console.log('retirement age', 65 - (2018 - year))
+}
+retirement(1990)
+
+// Demonstrating hoisting with variables ...
+console.log(age) 
+// if we are defining age variable in next line, output will be "undefined"
+// if we are not defining age variable in next line, output will be "Reference error"
+// var age = 30
+
