@@ -110,7 +110,7 @@ person.lastName = ''
 ## An Execution Context Object consist of 3 properties -
 ### Variable Object (VO)
 ### Scope Chain
-### "This" variable
+### "this" variable
 
 # An Execution Context Object is generated in 2 phases -
 ## Creation phase -
@@ -131,8 +131,15 @@ Code of function is executed line by line
 ## All local variables are scanned and pushed to execution context object's VO with value as "undefined"
 ## For example of above points, refer topic "Hoisting" in script.js
 
+# Scope chaining -
+## Scope of a variable is the function in which variable is defined
+## A child function can access variables defined in its parent function but vice-versa is not possible
+## For example of scope chaining, refer example in script.js
 
-
+# "this" variable -
+## In a regular function, 'this' variable points to global object (the window object, in the browser)
+## In a method, 'this' variable is pointing to object to which the function is attached or defined for.
+## Note - No value is assigned to 'this' until and unless, the function is invoked to which 'this' variable is pointing
 
 
 

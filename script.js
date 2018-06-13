@@ -225,7 +225,6 @@ for (var index = 0; index < names.length; index++) {
     }
     console.log('Printing name', names[index], '. Waiting for skipping an element ...')
 }
-*/
 
 // Hoisting ...
 
@@ -247,5 +246,50 @@ retirement(1990)
 console.log(age) 
 // if we are defining age variable in next line, output will be "undefined"
 // if we are not defining age variable in next line, output will be "Reference error"
-// var age = 30
+var age = 30
 
+// Scope Chaining ...
+var a = "Hey there!"
+outerFunction()
+function outerFunction() {
+    var b = "Ishan here."
+    console.log("Trying to access variable a from outerFunction!", a)
+    innerFunction()
+    function innerFunction() {
+        var c = "This is an example of scope chaining."
+        console.log(a + " " + b + " " + c)
+        innermostFunction()
+    } 
+}
+
+function innermostFunction() {
+    // this statement will give ReferenceError since c is not within scope
+    // of innermostFunction
+    // console.log("Trying to access variable c from innermostFunction!", c)
+
+    console.log("Trying to access variable a from innermostFunction!", a)
+    
+    // this will also not work since b is defined in a different scope
+    // console.log("Trying to access variable b from innermostFunction!", b)
+}
+
+// 'this' keyword ...
+// console.log('Value of this in global context.', this)
+
+calculateAge(1988)
+function calculateAge(year) {
+    console.log(2018 - year)
+    console.log(this)
+}
+*/
+
+var ishan = {
+    name: 'Ishan',
+    birthYear: 1988,
+    calculateAge: function() {
+        console.log(2018 - this.birthYear)
+        console.log(this)
+    }   
+}
+
+ishan.calculateAge()
